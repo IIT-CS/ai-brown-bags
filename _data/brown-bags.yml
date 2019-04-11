@@ -3,4 +3,10 @@
   time: 12am
   room: SB223
   presentations:
-    - { date: "Apr/24",  	time: "12:30pm",  	speakers: [ "Mustafa Bilgic" ],  	title: "AI", type: "overview" }
+    - date: "04/24"
+      time: "12:30pm"
+      speaker: "Mustafa Bilgic"
+      title: "AI"
+      type: "overview"
+      abstract: ""
+      bio: ""
