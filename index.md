@@ -17,13 +17,13 @@ In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {
 - **Date and Time:**  {{ talk.date }} - {% if talk.time %}{{ talk.time }}{% else %}{{ sem.time }}{% endif %}
 
 {% if talk.abstract %}
-### Abstract
+**Abstract**
 
 {{ talk.abstract }}
 {% endif %}
 
 {% if talk.bio %}
-### Bio
+**Bio**
 
 {{ talk.bio }}
 {{ talk.bio }}
