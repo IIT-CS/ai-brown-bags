@@ -1,9 +1,7 @@
-# AI at IIT Brown Bag Research Collaboration Seminar Series
-
 {% assign revsem = site.data.brown-bags | reverse %}
 {% for sem in revsem %}
 
-## {{ sem.semester }}
+# {{ sem.semester }}
 
 In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {{ sem.room }} unless indicated otherwise
 
@@ -11,7 +9,7 @@ In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {
 
   {% for talk in revtalks %}
 
-### {{ talk.date }} -  {{ talk.speaker }} - {{ talk.title }}
+## {{ talk.date }} -  {{ talk.speaker }} - {{ talk.title }}
 - **Title:** {{ talk.title }}
 - **Type of talk**: {{ talk.type }}
 - **Speaker**: {% if talk.speakerlink %}[{{ talk.speaker }}]({{ talk.speakerlink }}){% else %}{{ talk.speaker }}{% endif %}
@@ -19,13 +17,13 @@ In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {
 - **Date and Time:**  {{ talk.date }} - {% if talk.time %}{{ talk.time }}{% else %}{{ sem.time }}{% endif %}
 
 {% if talk.abstract %}
-#### Abstract
+### Abstract
 
 {{ talk.abstract }}
 {% endif %}
 
 {% if talk.bio %}
-#### Bio
+### Bio
 
 {{ talk.bio }}
 {{ talk.bio }}
