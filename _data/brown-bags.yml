@@ -6,6 +6,7 @@
     - date: "04/24"
       time: "12:30pm"
       speaker: "Mustafa Bilgic"
+      speakerlink: "http://www.cs.iit.edu/~mbilgic/"
       title: "AI"
       type: "overview"
       abstract: ""
