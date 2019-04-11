@@ -1,4 +1,4 @@
-# AI@IIT Brown Bag Research Collaboration Seminar Series
+# AI at IIT Brown Bag Research Collaboration Seminar Series
 
 {% assign revsem = site.data.seminars | reverse %}
 {% for sem in revsem %}

@@ -1,0 +1,6 @@
+- semester: 2019 Spring
+  day: Wednesdays
+  time: 12am
+  room: SB223
+  presentations:
+    - { date: "Apr/24",  	time: "12:30pm",  	speakers: [ "Mustafa Bilgic" ],  	title: "AI", type: "overview" }
