@@ -3,7 +3,7 @@
 
 # {{ sem.semester }}
 
-In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {{ sem.room }} unless indicated otherwise
+In **{{ sem.semester }}**  the group is meeting **{{ sem.day }}** at **{{ sem.time }}** in **{{ sem.room }}** unless indicated otherwise.
 
 {% assign revtalks = sem.presentations | reverse %}
 

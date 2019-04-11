@@ -1,13 +1,14 @@
+# TYPES of talks
 - semester: 2019 Spring
   day: Wednesdays
-  time: 12am
-  room: SB223
+  time: "12:30 pm - 1:30 pm"
+  room: SB223 (Stuart Building)
   presentations:
     - date: "04/24"
       time: "12:30pm"
       speaker: "Mustafa Bilgic"
       speakerlink: "http://www.cs.iit.edu/~mbilgic/"
       title: "AI"
-      type: "overview"
+      type: "survey/introductory talk"
       abstract: ""
       bio: ""
