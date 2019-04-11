@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# AI@IIT Brown Bag Research Collaboration Seminar Series
 
-You can use the [editor on GitHub](https://github.com/IIT-CS/ai-brown-bags/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+{% assign revsem = site.data.seminars | reverse %}
+{% for sem in revsem %}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## {{ sem.semester }}
 
-### Markdown
+In {{ sem.semester }}  the group is meeting {{ sem.day }} at {{ sem.time }} in {{ sem.room }} unless indicated otherwise
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+{% assign revtalks = sem.presentations | reverse %}
 
-```markdown
-Syntax highlighted code block
+  {% for talk in revtalks %}
 
-# Header 1
-## Header 2
-### Header 3
+### {{ talk.speaker }} - {{ talk.title }}
+- *Title:* {{ talk.title }}
+- *Type of talk*: {{ talk.type }}
+- *Speaker*: {% if talk.speakerlink %}[{{ talk.speaker }}]({{ talk.speakerlink }}){%else%}{{ talk.speaker }}{%end%}
+- *Room:* {% if talk.room %}{{ talk.room }}{% else %}{{ sem.room }}{% endif %}
+- *Date and Time:*  {{ talk.date }}{% if talk.time %}{{ talk.time }}{% else %}{{ sem.time }}{% endif %}
 
-- Bulleted
-- List
+{% if talk.abstract %}
+#### Abstract
 
-1. Numbered
-2. List
+{{ talk.abstract }}
+{% endif %}
 
-**Bold** and _Italic_ and `Code` text
+{% if talk.bio %}
+#### Bio
 
-[Link](url) and ![Image](src)
-```
+{{ talk.bio }}
+{{ talk.bio }}
+{% endif %}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IIT-CS/ai-brown-bags/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	{% endfor %}
+{% endfor %}
