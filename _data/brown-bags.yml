@@ -5,6 +5,7 @@
   room: SB223 (Stuart Building)
   presentations:
     - date: "04/24"
+      time: "12:45 pm - 1:45 pm"
       speaker: "Mustafa Bilgic"
       speakerlink: "http://www.cs.iit.edu/~mbilgic/"
       title: "An Introduction to AI"
